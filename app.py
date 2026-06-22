@@ -171,24 +171,6 @@ fig_ewl.update_layout(
 
 st.plotly_chart(fig_ewl, use_container_width=True)
 
-# --- THE PUNCHLINE ---
-st.markdown("### 🎯 Connecting the Pieces: The Big Picture")
-
-# 1. Open the expander out in the open (not inside quotes!)
-with st.expander("📖 Click here to learn how this graph combines both datasets"):
-    # 2. Put the internal bullet points inside here
-    st.markdown("""
-    1. **The Line Graph** tells us: *"The normal, everyday sea level at this specific year will have permanently risen by this much."*
-    2. **The Bar Graph** tells us: *"When a specific extreme water event (like a storm or king tide) hits us, the water level temporarily spikes by this much."*
-    """)
-
-# 3. Put the final concluding text below the expander
-st.markdown("""
-**The Ultimate Threat:** When you add a permanent baseline rise (the line graph) to a temporary storm spike (the bar graph), 
-the water line pushes deep into the island. What used to be an manageable high-water event will eventually cause severe, 
-regular flooding on Moku’oloe.
-""")
-
 # --- CHAPTER 4: THE FUTURE FORECAST (COMBINED IMPACT) ---
 st.write("---")
 st.header("🔮 The Grand Finale: Predicting Future Storm Crests")
@@ -246,13 +228,22 @@ fig_forecast.update_layout(
 
 st.plotly_chart(fig_forecast, use_container_width=True)
 
+# --- THE PUNCHLINE ---
+st.markdown("### 🎯 Connecting the Pieces: The Big Picture")
+
+# 1. Open the expander out in the open (not inside quotes!)
 with st.expander("📖 Click here to learn how this graph combines both datasets"):
+    # 2. Put the internal bullet points inside here
     st.markdown("""
     1. **The Line Graph** tells us: *"The normal, everyday sea level at this specific year will have permanently risen by this much."*
     2. **The Bar Graph** tells us: *"When a specific extreme water event (like a storm or king tide) hits us, the water level temporarily spikes by this much."*
     """)
 
-st.markdown(f"""
-> **💡 Story Insight:** Notice that in the year 2020, this extreme event crested around **{storm_spike_m:.2f} meters**. 
-> By the year 2100 under this scenario, that exact same type of storm event will crest much higher because the background ocean floor has permanently risen.
+# 3. Put the final concluding text below the expander
+st.markdown("""
+**The Ultimate Threat:** When you add a permanent baseline rise (the line graph) to a temporary storm spike (the bar graph), 
+the water line pushes deep into the island. What used to be an manageable high-water event will eventually cause severe, 
+regular flooding on Moku’oloe.
 """)
+
+
