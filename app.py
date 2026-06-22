@@ -217,7 +217,7 @@ fig_forecast = px.line(
 )
 
 # Style it with a high-danger crimson color line
-fig_forecast.update_traces(line_color='#D9383A', line_width=4)
+fig_forecast.update_traces(line_color='#A020F0', line_width=4)
 
 # Force the horizontal axis ticks to format cleanly as simple year numbers
 fig_forecast.update_layout(
