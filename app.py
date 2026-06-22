@@ -237,6 +237,7 @@ with st.expander("📖 Click here to learn how this graph combines both datasets
     st.markdown("""
     1. **The Line Graph** tells us: *"The normal, everyday sea level at this specific year will have permanently risen by this much."*
     2. **The Bar Graph** tells us: *"When a specific extreme water event (like a storm or king tide) hits us, the water level temporarily spikes by this much."*
+    3. **The Combined Graph** tells us: *"During a specific storm event, if we take the relative sea level during that specific year, the crest height will be this high"*
     """)
 
 # 3. Put the final concluding text below the expander
