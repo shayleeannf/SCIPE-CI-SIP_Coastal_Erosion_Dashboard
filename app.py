@@ -16,20 +16,20 @@ st.markdown(
 )
 
 # Set up page styling
-st.set_page_config(page_title="Moku’oloe Climate Risk", layout="wide")
-st.title("🌊 The Vulnerability of Moku’oloe (Coconut Island)")
+st.set_page_config(page_title="Mokuoloe Climate Risk", layout="wide")
+st.title("🌊 The Vulnerability of Mokuoloe (Coconut Island)")
 
 # --- THE PROJECT SCOPE: MOKUOLOE MAP ---
 st.markdown("---")
 st.header("🏝️ Where are we looking?")
 st.markdown("""
-Our specific focus is **Moku’oloe**, commonly known as Coconut Island, which sits within 
+Our specific focus is **Mokuoloe**, commonly known as Coconut Island, which sits within 
 the large natural lagoon of Kāne’ohe Bay on the windward (eastern) coast of O'ahu. 
 """)
 
 # 1. Provide the specific location data for Mokuoloe
 map_data = pd.DataFrame({
-    'Island Name': ['Moku’oloe (Coconut Island)'],
+    'Island Name': ['Mokuoloe (Coconut Island)'],
     'lat': [21.4337],  # Latitude for Mokuoloe
     'lon': [-157.7885]  # Longitude for Mokuoloe
 })
@@ -64,7 +64,7 @@ st.plotly_chart(fig_map, use_container_width=True)
 # --- CHAPTER 1: THE HOOK ---
 st.markdown("""
 ### Why this matters right now:
-Moku’oloe isn't just a beautiful island in Kāneʻohe Bay; it is a vital hub for marine biology research. 
+Mokuoloe isn't just a beautiful island in Kāneʻohe Bay; it is a vital hub for marine biology research. 
 Because it sits at sea level, even a few centimeters of rising ocean waters drastically change how often 
 the island floods, threatening facilities, coral research, and coastal ecosystems. 
 """)
@@ -81,9 +81,9 @@ When you look at these models, each scenario represents a different global futur
 But there is a twist: these models are built using **Global Mean Sea Level (GMSL)** targets. 
 
 For example, when a model simulates a **1.0-meter scenario**, it is asking: 
-> *"If the global average ocean height rises by 1.0 meter, what actually happens locally right here on the shores of Moku’oloe?"*
+> *"If the global average ocean height rises by 1.0 meter, what actually happens locally right here on the shores of Mokuoloe?"*
 
-Because of local factors like changing ocean currents, regional water temperatures, and whether the land in Hawaii is rising or sinking (**Vertical Land Motion**), the local sea level rise at Moku’oloe might be higher or lower than the global average. The line chart below tracks that specific, localized future for our island.
+Because of local factors like changing ocean currents, regional water temperatures, and whether the land in Hawaii is rising or sinking (**Vertical Land Motion**), the local sea level rise at Mokuoloe might be higher or lower than the global average. The line chart below tracks that specific, localized future for our island.
 """)
 
 # Load the Sea Level Rise Data
@@ -177,7 +177,7 @@ st.header("🔮 The Grand Finale: Predicting Future Storm Crests")
 st.markdown("""
 ### See the Combined Power of Both Datasets:
 Now, let's look into the future. By combining the permanent baseline sea level rise with a temporary 
-historical extreme storm event, we can see exactly how high future floods will crest on Moku’oloe. 
+historical extreme storm event, we can see exactly how high future floods will crest on Mokuoloe. 
 
 > **What does "Crest Height" mean?** The crest height is the absolute highest peak or maximum elevation that the water surface reaches during a flood event. 
 > Think of it as the ultimate high-water mark on land. If the crest height is higher than the island's docks or foundations, 
@@ -244,7 +244,7 @@ with st.expander("📖 Click here to learn how this graph combines both datasets
 st.markdown("""
 **The Ultimate Threat:** When you add a permanent baseline rise (the line graph) to a temporary storm spike (the bar graph), 
 the water line pushes deep into the island. What used to be an manageable high-water event will eventually cause severe, 
-regular flooding on Moku’oloe.
+regular flooding on Mokuoloe.
 """)
 
 
